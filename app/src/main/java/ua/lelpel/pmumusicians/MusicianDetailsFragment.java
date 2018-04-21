@@ -15,7 +15,6 @@ import android.widget.TextView;
  */
 public class MusicianDetailsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_NAME = "name";
     private static final String ARG_DESC = "description";
 
@@ -36,7 +35,6 @@ public class MusicianDetailsFragment extends Fragment {
      * @param description Parameter 2.
      * @return A new instance of fragment MusicianDetailsFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static MusicianDetailsFragment newInstance(String name, String description) {
         MusicianDetailsFragment fragment = new MusicianDetailsFragment();
         Bundle args = new Bundle();
@@ -59,6 +57,7 @@ public class MusicianDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         TextView textView = new TextView(getActivity());
+        //textView.setText("YEAH BOI");
         textView.setText(name + "\n" + description);
         return textView;
     }
